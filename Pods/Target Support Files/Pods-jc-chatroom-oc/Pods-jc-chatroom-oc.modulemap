@@ -1,0 +1,6 @@
+framework module Pods_jc_chatroom_oc {
+  umbrella header "Pods-jc-chatroom-oc-umbrella.h"
+
+  export *
+  module * { export * }
+}
