@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		DA9C12B0238CAD59003522D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA9C12AF238CAD59003522D0 /* Assets.xcassets */; };
 		DA9C12B3238CAD59003522D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA9C12B1238CAD59003522D0 /* LaunchScreen.storyboard */; };
 		DA9C12B6238CAD59003522D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9C12B5238CAD59003522D0 /* main.m */; };
+		DA9C568C238D30E70081E1BE /* ForSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9C568B238D30E70081E1BE /* ForSwift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,8 @@
 		DA9C12B2238CAD59003522D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA9C12B4238CAD59003522D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA9C12B5238CAD59003522D0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DA9C568A238D30E60081E1BE /* jc-chatroom-oc-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "jc-chatroom-oc-Bridging-Header.h"; sourceTree = "<group>"; };
+		DA9C568B238D30E70081E1BE /* ForSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForSwift.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +53,6 @@
 				255C57487199575B177AC774 /* Pods-jc-chatroom-oc.debug.xcconfig */,
 				B5C301B94A0090C10C68CD84 /* Pods-jc-chatroom-oc.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -92,6 +94,8 @@
 				DA9C12B1238CAD59003522D0 /* LaunchScreen.storyboard */,
 				DA9C12B4238CAD59003522D0 /* Info.plist */,
 				DA9C12B5238CAD59003522D0 /* main.m */,
+				DA9C568B238D30E70081E1BE /* ForSwift.swift */,
+				DA9C568A238D30E60081E1BE /* jc-chatroom-oc-Bridging-Header.h */,
 			);
 			path = "jc-chatroom-oc";
 			sourceTree = "<group>";
@@ -129,6 +133,7 @@
 				TargetAttributes = {
 					DA9C12A2238CAD58003522D0 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -211,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA9C12AB238CAD58003522D0 /* ViewController.m in Sources */,
+				DA9C568C238D30E70081E1BE /* ForSwift.swift in Sources */,
 				DA9C12B6238CAD59003522D0 /* main.m in Sources */,
 				DA9C12A8238CAD58003522D0 /* AppDelegate.m in Sources */,
 			);
@@ -355,6 +361,7 @@
 			baseConfigurationReference = 255C57487199575B177AC774 /* Pods-jc-chatroom-oc.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59HY6XGPGA;
 				INFOPLIST_FILE = "jc-chatroom-oc/Info.plist";
@@ -364,6 +371,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jc.chat.oc.jc-chatroom-oc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "jc-chatroom-oc/jc-chatroom-oc-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -373,6 +383,7 @@
 			baseConfigurationReference = B5C301B94A0090C10C68CD84 /* Pods-jc-chatroom-oc.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59HY6XGPGA;
 				INFOPLIST_FILE = "jc-chatroom-oc/Info.plist";
@@ -382,6 +393,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jc.chat.oc.jc-chatroom-oc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "jc-chatroom-oc/jc-chatroom-oc-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

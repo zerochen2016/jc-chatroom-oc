@@ -7,13 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-@import SocketIO;
+#import <SocketIO/SocketIO-Swift.h>
 
 @interface ViewController : UIViewController
 
 @property(nonatomic, strong)UIButton *button;
 @property(nonatomic, strong)UITextField *text;
 @property(nonatomic, strong)UITextView *messages;
+@property(nonatomic, strong)SocketManager *manager;
 @property(nonatomic, strong)SocketIOClient *socket;
 
 -(void)connectSocketIO;
