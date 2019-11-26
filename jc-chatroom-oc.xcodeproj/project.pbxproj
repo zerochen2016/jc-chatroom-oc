@@ -14,7 +14,6 @@
 		DA9C12B0238CAD59003522D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA9C12AF238CAD59003522D0 /* Assets.xcassets */; };
 		DA9C12B3238CAD59003522D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA9C12B1238CAD59003522D0 /* LaunchScreen.storyboard */; };
 		DA9C12B6238CAD59003522D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9C12B5238CAD59003522D0 /* main.m */; };
-		DA9C568C238D30E70081E1BE /* ForSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9C568B238D30E70081E1BE /* ForSwift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +31,7 @@
 		DA9C12B4238CAD59003522D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA9C12B5238CAD59003522D0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DA9C568A238D30E60081E1BE /* jc-chatroom-oc-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "jc-chatroom-oc-Bridging-Header.h"; sourceTree = "<group>"; };
-		DA9C568B238D30E70081E1BE /* ForSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForSwift.swift; sourceTree = "<group>"; };
+		DA9C568D238D37BB0081E1BE /* BaseInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseInfo.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +93,8 @@
 				DA9C12B1238CAD59003522D0 /* LaunchScreen.storyboard */,
 				DA9C12B4238CAD59003522D0 /* Info.plist */,
 				DA9C12B5238CAD59003522D0 /* main.m */,
-				DA9C568B238D30E70081E1BE /* ForSwift.swift */,
 				DA9C568A238D30E60081E1BE /* jc-chatroom-oc-Bridging-Header.h */,
+				DA9C568D238D37BB0081E1BE /* BaseInfo.h */,
 			);
 			path = "jc-chatroom-oc";
 			sourceTree = "<group>";
@@ -216,7 +215,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA9C12AB238CAD58003522D0 /* ViewController.m in Sources */,
-				DA9C568C238D30E70081E1BE /* ForSwift.swift in Sources */,
 				DA9C12B6238CAD59003522D0 /* main.m in Sources */,
 				DA9C12A8238CAD58003522D0 /* AppDelegate.m in Sources */,
 			);

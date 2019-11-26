@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "BaseInfo.h"
 
 @interface ViewController ()
 
@@ -48,7 +49,7 @@
 }
 
 -(void)connectSocketIO{
-    NSURL *url = [[NSURL alloc] initWithString:@"http://47.56.100.123:3000"];
+    NSURL *url = [[NSURL alloc] initWithString:SOCKETIO_URL];
     _manager = [[SocketManager alloc] initWithSocketURL:url config:@{@"log":@NO,@"forcePolling":@YES,@"reconnectWail":@1}];
     _socket = _manager.defaultSocket;
     [_socket connect];
